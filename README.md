@@ -23,6 +23,15 @@ source ~/.zshrc
 ```
 source ~/.bashrc
 ```
+<h3>3. start program</h3>
+
+type 'ttt' in your terminal to start application
+
+```zsh
+ttt
+```
+
+
 <h3>Source code</h3>
 
 [link to source code](https://github.com/hodzzzinsky/terminal_typing_test)

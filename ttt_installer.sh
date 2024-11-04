@@ -14,10 +14,12 @@ if [ -f "$HOME/.bashrc" ]; then
     # Добавляем ~/.ttt/bin в PATH в .bashrc
     echo 'export PATH="$HOME/.ttt/bin:$PATH"' >> "$HOME/.bashrc"
     echo 'PATH has been updated in .bashrc. Please restart your terminal or run "source ~/.bashrc".'
+    echo 'after typing "source ~/.bashrc" type "ttt" to start application."
 elif [ -f "$HOME/.zshrc" ]; then
     # Добавляем ~/.ttt/bin в PATH в .zshrc
     echo 'export PATH="$HOME/.ttt/bin:$PATH"' >> "$HOME/.zshrc"
     echo 'PATH has been updated in .zshrc. Please restart your terminal or run "source ~/.zshrc".'
+    echo 'after typing "source ~/.zshrc" type "ttt" to start application."
 else
     # Если ни одного файла нет, выводим рекомендацию
     echo 'No .bashrc or .zshrc file found.'
