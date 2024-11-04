@@ -2,13 +2,13 @@
 
 mkdir -p ~/.ttt/bin
 
-curl -L -o ./ttt.tar.gz https://github.com/hodzzzinsky/ttt_download/archive/refs/tags/v1.0.tar.gz
+curl -L -o ./ttt.tar.gz https://github.com/hodzzzinsky/ttt_download/archive/refs/tags/v1.1.tar.gz
 
 tar -xzvf ./ttt.tar.gz -C ./ && \
     rm -rf ./ttt.tar.gz && \
-    mv ./ttt_download-1.0/ttt ~/.ttt/bin
+    mv ./ttt_download-1.1/ttt_mac ~/.ttt/bin
 
-chmod +x ~/.ttt/bin/ttt
+chmod +x ~/.ttt/bin/ttt_mac
 
 if [ -f "$HOME/.bashrc" ]; then
     # Добавляем ~/.ttt/bin в PATH в .bashrc

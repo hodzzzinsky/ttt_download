@@ -4,15 +4,15 @@
 mkdir -p ~/.ttt/bin
 
 # Скачиваем архив
-curl -L -o ./ttt.tar.gz https://github.com/hodzzzinsky/ttt_download/archive/refs/tags/v1.0.tar.gz
+curl -L -o ./ttt.tar.gz https://github.com/hodzzzinsky/ttt_download/archive/refs/tags/v1.1.tar.gz
 
 # Распаковываем архив
 tar -xzvf ./ttt.tar.gz -C ./ && \
     rm -rf ./ttt.tar.gz && \
-    mv ./ttt_download-1.0/ttt ~/.ttt/bin
+    mv ./ttt_download-1.1/ttt_linux ~/.ttt/bin
 
 # Делаем файл исполняемым
-chmod +x ~/.ttt/bin/ttt
+chmod +x ~/.ttt/bin/ttt_linux
 
 # Обновляем PATH
 if [ -f "$HOME/.bashrc" ]; then

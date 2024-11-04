@@ -2,16 +2,13 @@
 $binDir = "$HOME\.ttt\bin"
 New-Item -ItemType Directory -Force -Path $binDir
 
-# Скачиваем архив
-Invoke-WebRequest -Uri "https://github.com/hodzzzinsky/ttt_download/archive/refs/tags/v1.0.tar.gz" -OutFile "$HOME\ttt.tar.gz"
+# Скачиваем ZIP-архив
+Invoke-WebRequest -Uri "https://github.com/hodzzzinsky/ttt_download/archive/refs/tags/v1.1.zip" -OutFile "$HOME\ttt.zip"
 
 # Распаковываем архив
-tar -xzf "$HOME\ttt.tar.gz" -C $HOME
-Remove-Item "$HOME\ttt.tar.gz"
-Move-Item "$HOME\ttt_download-1.0\ttt" $binDir
-
-# Делаем файл исполняемым (не требуется в Windows, но для совместимости)
-# В Windows не нужно менять права доступа, так как они работают по-другому
+Expand-Archive -Path "$HOME\ttt.zip" -DestinationPath $HOME -Force
+Remove-Item "$HOME\ttt.zip"
+Move-Item "$HOME\ttt_download-1.1\ttt_windows.exe" $binDir
 
 # Обновляем PATH
 if (Test-Path "$HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1") {
