@@ -6,19 +6,15 @@ Train your typing speed in terminal!
 
 <h1>Installation</h1>
 
-<h2>MacOS & Linux<h2>
+yet only mackOS!!
+
+<h2>MacOS<h2>
 <h3>1. copy bash and execute script:</h3>
 macOS:
 
 ```
 curl -fsSL https://raw.githubusercontent.com/hodzzzinsky/ttt_download/main/ttt_installer.sh | bash -s ttt_installer.sh
 ```
-Linux:
-
-```
-curl -fsSL https://raw.githubusercontent.com/hodzzzinsky/ttt_download/main/install.sh | bash -s install.sh
-```
-
 
 <h3>2. update .bashrc or .zshrc config:</h3>
 
@@ -38,11 +34,6 @@ type 'ttt' in your terminal to start application
 
 ```zsh
 ttt
-```
-
-<h2>WINDOWS</h2>
-```
-curl -fsSL https://raw.githubusercontent.com/hodzzzinsky/ttt_download/main/install.ps1 | powershell -ExecutionPolicy Bypass -Command -
 ```
 
 <h3>Source code</h3>
