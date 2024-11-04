@@ -14,10 +14,12 @@ curl -fsSL https://raw.githubusercontent.com/hodzzzinsky/ttt_download/main/ttt_i
 <h3>2. update .bashrc or .zshrc config:</h3>
 
 <h5>if you have zsh</h5>
+
 ```
 source ~/.zshrc
 ```
 <h5>if you have bash</h5> 
+
 ```
 source ~/.bashrc
 ```
