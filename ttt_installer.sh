@@ -31,3 +31,4 @@ else
     echo 'after source ~/.zshrc or ~/.bashrc updated'
     echo 'type: ttt to start application'
 fi
+alias ttt="ttt_mac"
